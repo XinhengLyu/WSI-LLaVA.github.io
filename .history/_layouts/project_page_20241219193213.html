@@ -6,6 +6,7 @@
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
+  <!-- 添加浏览器标签图片 -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -38,7 +39,7 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <div style="display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
-            <img src="./static/image/wsi-logo.png" alt="WSI Logo" style="height: 95px; vertical-align: middle; margin-right: 10px;">
+            <img src="./static/image/wsi-logo.png" alt="WSI Logo" style="height: 45px; vertical-align: middle; margin-right: 10px;">
             <h1 class="title is-1 publication-title">{{ page.title }}</h1>
           </div>
           {% if page.authors %}
@@ -51,7 +52,7 @@
 
           {% if page.affiliations %}
           <div class="is-size-5 publication-authors">
-            <span class="author-block" style="font-size: 15px;">
+            <span class="author-block">
               {{ page.affiliations }}
             </span>
           </div>
