@@ -56,6 +56,16 @@
             </span>
           </div>
           {% endif %}
+          
+        {% if page.contact %}
+        <div class="is-size-5 publication-authors">
+          <span class="author-block" style="font-size: 15px; color: #666666;">
+            {{ page.contact }}
+          </span>
+        </div>
+        {% endif %}
+
+
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -71,35 +81,36 @@
               </span>
               {% endif %}
               <!-- Video Link. -->
-              {% if page.video %}
+              {% if page.Zhihu %}
               <span class="link-block">
-                <a href="{{ page.video }}" class="external-link button is-normal is-rounded is-dark">
+                <a href="{{ page.Zhihu }}" class="external-link button is-normal is-rounded is-dark">
+                  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                    <i class="ri-zhihu-line" style="font-size: 21px; color: #f4f7f9; margin-right: 8px;"></i>
                   </span>
-                  <span>Video</span>
+                  <span>Zhihu</span>
                 </a>
               </span>
               {% endif %}
               <!-- Code Link. -->
               {% if page.code %}
               <span class="link-block">
-                <a href="{{ page.code }}" class="external-link button is-normal is-rounded is-dark">
+                <a href="{{ page.code }}" class="external-link button is-normal is-rounded is-dark" style="pointer-events: none;">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Code (Coming)</span>
                 </a>
               </span>
               {% endif %}
               <!-- Dataset Link. -->
               {% if page.data %}
               <span class="link-block">
-                <a href="{{ page.data }}" class="external-link button is-normal is-rounded is-dark">
+                <a href="{{ page.data }}" class="external-link button is-normal is-rounded is-dark" style="pointer-events: none;">
                   <span class="icon">
                       <i class="fas fa-database"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Dataset (Coming)</span>
                 </a>
               </span>
               {% endif %}
@@ -121,17 +132,18 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="columns is-centered">
+    <div class="columns is-centered has-text-centered">
       <div class="column is-8">
         <div class="content">
           <p>
-            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>. 
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
           </p>
         </div>
       </div>
     </div>
   </div>
 </footer>
+
 
 </body>
 </html>
